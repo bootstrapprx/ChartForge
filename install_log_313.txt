@@ -1,0 +1,111 @@
+Collecting fastapi==0.111.0 (from -r backend\requirements.txt (line 1))
+  Using cached fastapi-0.111.0-py3-none-any.whl.metadata (25 kB)
+Collecting uvicorn==0.29.0 (from -r backend\requirements.txt (line 2))
+  Using cached uvicorn-0.29.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting watchfiles (from -r backend\requirements.txt (line 3))
+  Using cached watchfiles-1.1.1-cp313-cp313-win_amd64.whl.metadata (5.0 kB)
+Collecting python-dotenv (from -r backend\requirements.txt (line 4))
+  Using cached python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting pyyaml (from -r backend\requirements.txt (line 5))
+  Using cached pyyaml-6.0.3-cp313-cp313-win_amd64.whl.metadata (2.4 kB)
+Collecting sqlalchemy==2.0.30 (from -r backend\requirements.txt (line 6))
+  Using cached SQLAlchemy-2.0.30-py3-none-any.whl.metadata (9.6 kB)
+Collecting psycopg2-binary==2.9.11 (from -r backend\requirements.txt (line 7))
+  Using cached psycopg2_binary-2.9.11-cp313-cp313-win_amd64.whl.metadata (5.1 kB)
+Collecting alembic==1.13.1 (from -r backend\requirements.txt (line 8))
+  Using cached alembic-1.13.1-py3-none-any.whl.metadata (7.4 kB)
+Collecting pydantic==2.7.1 (from pydantic[email]==2.7.1->-r backend\requirements.txt (line 9))
+  Using cached pydantic-2.7.1-py3-none-any.whl.metadata (107 kB)
+Collecting pydantic-settings==2.2.1 (from -r backend\requirements.txt (line 10))
+  Using cached pydantic_settings-2.2.1-py3-none-any.whl.metadata (3.1 kB)
+Collecting pandas==2.3.3 (from -r backend\requirements.txt (line 11))
+  Using cached pandas-2.3.3-cp313-cp313-win_amd64.whl.metadata (19 kB)
+Collecting openpyxl==3.1.2 (from -r backend\requirements.txt (line 12))
+  Using cached openpyxl-3.1.2-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting httpx==0.27.0 (from -r backend\requirements.txt (line 13))
+  Using cached httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
+Collecting requests-oauthlib==1.3.1 (from -r backend\requirements.txt (line 14))
+  Using cached requests_oauthlib-1.3.1-py2.py3-none-any.whl.metadata (10 kB)
+Collecting python-jose==3.3.0 (from python-jose[cryptography]==3.3.0->-r backend\requirements.txt (line 15))
+  Using cached python_jose-3.3.0-py2.py3-none-any.whl.metadata (5.4 kB)
+Collecting passlib==1.7.4 (from passlib[bcrypt]==1.7.4->-r backend\requirements.txt (line 16))
+  Using cached passlib-1.7.4-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting python-dotenv (from -r backend\requirements.txt (line 4))
+  Using cached python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)
+Collecting thefuzz==0.22.1 (from -r backend\requirements.txt (line 18))
+  Using cached thefuzz-0.22.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting python-Levenshtein==0.25.1 (from -r backend\requirements.txt (line 19))
+  Using cached python_Levenshtein-0.25.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting authlib==1.3.0 (from -r backend\requirements.txt (line 20))
+  Using cached Authlib-1.3.0-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting starlette<0.38.0,>=0.37.2 (from fastapi==0.111.0->-r backend\requirements.txt (line 1))
+  Using cached starlette-0.37.2-py3-none-any.whl.metadata (5.9 kB)
+Collecting typing-extensions>=4.8.0 (from fastapi==0.111.0->-r backend\requirements.txt (line 1))
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting fastapi-cli>=0.0.2 (from fastapi==0.111.0->-r backend\requirements.txt (line 1))
+  Using cached fastapi_cli-0.0.16-py3-none-any.whl.metadata (6.4 kB)
+Collecting jinja2>=2.11.2 (from fastapi==0.111.0->-r backend\requirements.txt (line 1))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting python-multipart>=0.0.7 (from fastapi==0.111.0->-r backend\requirements.txt (line 1))
+  Using cached python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
+Collecting ujson!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0,>=4.0.1 (from fastapi==0.111.0->-r backend\requirements.txt (line 1))
+  Using cached ujson-5.11.0-cp313-cp313-win_amd64.whl.metadata (9.6 kB)
+Collecting orjson>=3.2.1 (from fastapi==0.111.0->-r backend\requirements.txt (line 1))
+  Using cached orjson-3.11.4-cp313-cp313-win_amd64.whl.metadata (42 kB)
+Collecting email_validator>=2.0.0 (from fastapi==0.111.0->-r backend\requirements.txt (line 1))
+  Using cached email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+Collecting annotated-types>=0.4.0 (from pydantic==2.7.1->pydantic[email]==2.7.1->-r backend\requirements.txt (line 9))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.18.2 (from pydantic==2.7.1->pydantic[email]==2.7.1->-r backend\requirements.txt (line 9))
+  Using cached pydantic_core-2.18.2.tar.gz (383 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  Preparing metadata (pyproject.toml) did not run successfully.
+  exit code: 1
+  
+  [23 lines of output]
+  Python reports SOABI: cp313-win_amd64
+  Computed rustc target triple: x86_64-pc-windows-msvc
+  Installation directory: C:\Users\ander\AppData\Local\puccinialin\puccinialin\Cache
+  Rustup already downloaded
+  Installing rust to C:\Users\ander\AppData\Local\puccinialin\puccinialin\Cache\rustup
+  warn: It looks like you have an existing rustup settings file at:
+  warn: C:\Users\ander\.rustup\settings.toml
+  warn: Rustup will install the default toolchain as specified in the settings file,
+  warn: instead of the one inferred from the default host triple.
+  info: profile set to 'minimal'
+  info: default host triple is x86_64-pc-windows-msvc
+  warn: Updating existing toolchain, profile choice will be ignored
+  info: syncing channel updates for 'stable-x86_64-pc-windows-msvc'
+  info: default toolchain set to 'stable-x86_64-pc-windows-msvc'
+  Checking if cargo is installed
+  cargo 1.91.1 (ea2d97820 2025-10-10)
+  
+  Cargo, the Rust package manager, is not installed or is not on PATH.
+  This package requires Rust and Cargo to compile extensions. Install it through
+  the system's package manager or via https://rustup.rs/
+  
+  Checking for Rust toolchain....
+  Rust not found, installing into a temporary directory
+  [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 25.2 -> 25.3
+[notice] To update, run: C:\Users\ander\OneDrive\Documentos\GitHub\ForgeChart\ChartForge\backend\.venv\Scripts\python.exe -m pip install --upgrade pip
+error: metadata-generation-failed
+
+Encountered error while generating package metadata.
+
+See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.

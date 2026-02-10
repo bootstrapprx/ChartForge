@@ -1,0 +1,80 @@
+{
+  "name": "Real Estate Standard Chart of Accounts",
+  "version": "1.0",
+  "root": [
+    {
+      "code": "1000",
+      "description": "Assets",
+      "type": "H",
+      "category": "Asset",
+      "children": [
+        {
+          "code": "1100",
+          "description": "Cash",
+          "type": "D",
+          "category": "Asset"
+        },
+        {
+          "code": "1200",
+          "description": "Real Estate Holdings",
+          "type": "H",
+          "category": "Asset",
+          "children": [
+            {
+              "code": "1210",
+              "description": "Developed Property",
+              "type": "D",
+              "category": "Asset"
+            },
+            {
+              "code": "1220",
+              "description": "Undeveloped Land",
+              "type": "D",
+              "category": "Asset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "4000",
+      "description": "Revenue",
+      "type": "H",
+      "category": "Revenue",
+      "children": [
+        {
+          "code": "4100",
+          "description": "Rental Income",
+          "type": "D",
+          "category": "Revenue"
+        },
+        {
+          "code": "4200",
+          "description": "Property Sale Income",
+          "type": "D",
+          "category": "Revenue"
+        }
+      ]
+    },
+    {
+      "code": "5000",
+      "description": "Expenses",
+      "type": "H",
+      "category": "Expense",
+      "children": [
+        {
+          "code": "5100",
+          "description": "Property Management Fees",
+          "type": "D",
+          "category": "Expense"
+        },
+        {
+          "code": "5200",
+          "description": "Repairs and Maintenance",
+          "type": "D",
+          "category": "Expense"
+        }
+      ]
+    }
+  ]
+}

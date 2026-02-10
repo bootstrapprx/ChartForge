@@ -1,0 +1,13 @@
+name = "chartforge-backend"
+main = "worker_entry.py"
+compatibility_date = "2024-03-20"
+
+[vars]
+APP_ENV = "production"
+# Add other environment variables here, but DO NOT commit secrets.
+# Use `wrangler secret put` for sensitive data.
+
+# [hyperdrive]
+# bindings = [
+#   { name = "DB", id = "your-hyperdrive-id" }
+# ]

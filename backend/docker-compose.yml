@@ -1,0 +1,47 @@
+# Defines the services, networks, and volumes for the ChartForge backend.
+services:
+  # The main backend FastAPI application
+  backend:
+    container_name: chartforge-backend-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    volumes:
+      # Mounts the host's current directory into the container at /app
+      - .:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # PostgreSQL database service
+  db:
+    image: postgres:15
+    container_name: chartforge-postgres-dev
+    env_file:
+      - .env
+    volumes:
+      # Persists database data
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Ollama service for AI features
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      # Persists Ollama models
+      - ollama_data:/root/.ollama
+
+volumes:
+  postgres_data:
+  ollama_data:

@@ -1,0 +1,52 @@
+{
+  "prompts": [
+    {
+      "file": "Companies.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Companies'. It should have a title 'Companies Management' and a brief description. Include a placeholder div with a message like 'Company listings and management tools will appear here.'."
+    },
+    {
+      "file": "Dashboard.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Dashboard'. It should have a title 'Dashboard Overview' and a brief description. Include a placeholder div with a message like 'Key metrics and quick access features will be displayed here.'."
+    },
+    {
+      "file": "Index.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Index'. This will likely be the main landing page. It should have a title 'Welcome to ForgeChart' and a brief description. Include a placeholder div with a message like 'Application main content will be shown here.'."
+    },
+    {
+      "file": "Landing.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Landing'. This should be a marketing-style landing page. It should have a title 'ForgeChart - Simplify Your Financial Data' and a brief description. Include a placeholder div with a message like 'Marketing content and call-to-actions will be placed here.'."
+    },
+    {
+      "file": "Mappings.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Mappings'. It should have a title 'Data Mappings' and a brief description. Include a placeholder div with a message like 'Tools for mapping financial data will be available here.'."
+    },
+    {
+      "file": "MasterChart.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'MasterChart'. It should have a title 'Master Chart of Accounts' and a brief description. Include a placeholder div with a message like 'Manage your unified chart of accounts.'."
+    },
+    {
+      "file": "NotFound.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'NotFound'. It should have a title '404 - Page Not Found' and a brief description. Include a placeholder div with a message like 'The page you are looking for does not exist.'."
+    },
+    {
+      "file": "Reports.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Reports'. It should have a title 'Financial Reports' and a brief description. Include a placeholder div with a message like 'Generate and view various financial reports here.'."
+    },
+    {
+      "file": "Settings.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Settings'. It should have a title 'Application Settings' and a brief description. Include a placeholder div with a message like 'Configure application settings and preferences here.'."
+    },
+    {
+      "file": "Team.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Team'. It should have a title 'Team Management' and a brief description. Include a placeholder div with a message like 'Manage your team members and roles here.'."
+    },
+    {
+      "file": "Upload.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Upload'. It should have a title 'Upload Data' and a brief description. Include a placeholder div with a message like 'Upload your financial data files here.'."
+    },
+    {
+      "file": "Versions.tsx",
+      "instruction": "Create a React TypeScript placeholder page for 'Versions'. It should have a title 'Version History' and a brief description. Include a placeholder div with a message like 'View and manage different versions of your data or configurations here.'."
+    }
+  ]
+}

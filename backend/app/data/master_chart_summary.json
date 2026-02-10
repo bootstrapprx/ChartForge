@@ -1,0 +1,51 @@
+{
+  "total_accounts": 345,
+  "category_headers": 7,
+  "detail_accounts": 338,
+  "categories": {
+    "Asset": 144,
+    "Cost of Goods Sold": 44,
+    "Equity": 16,
+    "Expense": 60,
+    "Liability": 56,
+    "Other": 5,
+    "Revenue": 13
+  },
+  "code_ranges": {
+    "Asset": {
+      "min": "10000",
+      "max": "19867",
+      "count": 144
+    },
+    "Cost of Goods Sold": {
+      "min": "50000",
+      "max": "59761",
+      "count": 44
+    },
+    "Equity": {
+      "min": "30000",
+      "max": "39360",
+      "count": 16
+    },
+    "Expense": {
+      "min": "60000",
+      "max": "69794",
+      "count": 60
+    },
+    "Liability": {
+      "min": "20000",
+      "max": "29790",
+      "count": 56
+    },
+    "Other": {
+      "min": "80000",
+      "max": "87996",
+      "count": 5
+    },
+    "Revenue": {
+      "min": "40000",
+      "max": "49228",
+      "count": 13
+    }
+  }
+}

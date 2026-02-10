@@ -1,0 +1,106 @@
+{
+  "name": "US GAAP Standard",
+  "version": "1.0",
+  "root": [
+    {
+      "code": "1000",
+      "description": "Assets",
+      "type": "H",
+      "category": "Asset",
+      "children": [
+        {
+          "code": "1100",
+          "description": "Current Assets",
+          "type": "H",
+          "category": "Asset",
+          "children": [
+            {
+              "code": "1110",
+              "description": "Cash and Cash Equivalents",
+              "type": "H",
+              "category": "Asset",
+              "children": [
+                {
+                  "code": "1111",
+                  "description": "Main Operating Cash",
+                  "type": "D",
+                  "category": "Asset"
+                },
+                {
+                  "code": "1112",
+                  "description": "Petty Cash",
+                  "type": "D",
+                  "category": "Asset"
+                }
+              ]
+            },
+            {
+              "code": "1120",
+              "description": "Accounts Receivable",
+              "type": "H",
+              "category": "Asset",
+              "children": [
+                {
+                  "code": "1121",
+                  "description": "Accounts Receivable - Trade",
+                  "type": "D",
+                  "category": "Asset"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "1200",
+          "description": "Non-current Assets",
+          "type": "H",
+          "category": "Asset",
+          "children": [
+            {
+              "code": "1210",
+              "description": "Property, Plant, and Equipment",
+              "type": "D",
+              "category": "Asset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "2000",
+      "description": "Liabilities",
+      "type": "H",
+      "category": "Liability",
+      "children": [
+        {
+          "code": "2100",
+          "description": "Current Liabilities",
+          "type": "H",
+          "category": "Liability",
+          "children": [
+            {
+              "code": "2110",
+              "description": "Accounts Payable",
+              "type": "D",
+              "category": "Liability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "3000",
+      "description": "Equity",
+      "type": "H",
+      "category": "Equity",
+      "children": [
+        {
+          "code": "3100",
+          "description": "Retained Earnings",
+          "type": "D",
+          "category": "Equity"
+        }
+      ]
+    }
+  ]
+}

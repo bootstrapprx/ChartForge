@@ -1,0 +1,17 @@
+# Cloudflare Tunnel Configuration
+# Replace <Tunnel-UUID> and <yourdomain.com> with your actual values.
+
+tunnel: <Tunnel-UUID>
+credentials-file: /home/nonroot/.cloudflared/<Tunnel-UUID>.json
+
+ingress:
+  # Frontend
+  - hostname: chartforge.<yourdomain.com>
+    service: http://host.docker.internal:5173
+  
+  # Backend API
+  - hostname: api.chartforge.<yourdomain.com>
+    service: http://host.docker.internal:8000
+  
+  # Catch-all
+  - service: http_status:404

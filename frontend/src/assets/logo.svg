@@ -1,0 +1,23 @@
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>ChartForge Logo</title>
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(200, 95%, 35%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(185, 85%, 45%);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(5,5)">
+    <path 
+      d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+      fill="url(#logoGradient)"
+    />
+    <g transform="translate(10, 10)">
+      <rect x="0" y="12" width="4" height="8" rx="1" fill="white"/>
+      <rect x="6" y="8" width="4" height="12" rx="1" fill="white"/>
+      <rect x="12" y="4" width="4" height="16" rx="1" fill="white"/>
+    </g>
+  </g>
+  <text x="55" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="hsl(215, 25%, 15%)">
+    ChartForge
+  </text>
+</svg>
