@@ -15,7 +15,7 @@ ChartForge is a web application designed to help businesses centralize, map, and
 
 This project is built with:
 
-- **Vite:** A next-generation frontend tooling that provides a faster and leaner development experience.
+- **Next.js:** React framework for production apps (SSR/SPA support).
 - **React:** A JavaScript library for building user interfaces.
 - **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
 - **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
@@ -48,4 +48,4 @@ You need to have Node.js and npm installed on your machine. You can use [nvm](ht
     ```sh
     npm run dev
     ```
-    This will start the development server, typically at `http://localhost:5173`.
+    This will start the development server at `http://localhost:3000`.

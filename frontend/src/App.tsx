@@ -11,52 +11,52 @@ import ProtectedRoute from "@/components/auth/ProtectedRoute";
 import DashboardLayout from "./components/dashboard/DashboardLayout";
 
 // General Pages
-import Landing from "./pages/Landing";
-import NotFound from "./pages/NotFound";
-import Dashboard from "./pages/Dashboard";
+import Landing from "./screens/Landing";
+import NotFound from "./screens/NotFound";
+import Dashboard from "./screens/Dashboard";
 
 // Feature Pages
-import Companies from "./pages/Companies";
-import CompanyRegistration from "./pages/companies/CompanyRegistration";
-import Mappings from "./pages/Mappings";
-import Reports from "./pages/Reports";
-import UploadPage from "./pages/Upload";
-import Team from "./pages/Team";
-import SettingsPage from "./pages/SettingsPage";
-import TemplatesPage from "./pages/Templates";
+import Companies from "./screens/Companies";
+import CompanyRegistration from "./screens/companies/CompanyRegistration";
+import Mappings from "./screens/Mappings";
+import Reports from "./screens/Reports";
+import UploadPage from "./screens/Upload";
+import Team from "./screens/Team";
+import SettingsPage from "./screens/SettingsPage";
+import TemplatesPage from "./screens/Templates";
 
 // New Master Chart Pages
-import MasterChartPage from "./pages/masterchart/MasterChartPage";
-import MasterChartDashboard from "./pages/masterchart/MasterChartDashboard";
-import MasterChartTreePage from "./pages/masterchart/MasterChartTreePage";
-import MasterChartInteractivePage from "./pages/masterchart/MasterChartInteractivePage";
+import MasterChartPage from "./screens/masterchart/MasterChartPage";
+import MasterChartDashboard from "./screens/masterchart/MasterChartDashboard";
+import MasterChartTreePage from "./screens/masterchart/MasterChartTreePage";
+import MasterChartInteractivePage from "./screens/masterchart/MasterChartInteractivePage";
 import MasterChartImportPage from "./components/integrations/masterchart/MasterChartImportPage";
 import MasterChartExportPage from "./components/integrations/masterchart/MasterChartExportPage";
 
 // New Template and Import Engine Pages
-import DefaultTemplatePage from "./pages/template/DefaultTemplatePage";
-import ImportEnginePage from "./pages/import/ImportEnginePage";
+import DefaultTemplatePage from "./screens/template/DefaultTemplatePage";
+import ImportEnginePage from "./screens/import/ImportEnginePage";
 
 // New Organizer Pages
-import OrganizerPage from "./pages/organizer/OrganizerPage";
-import OrganizerReviewPage from "./pages/organizer/OrganizerReviewPage";
+import OrganizerPage from "./screens/organizer/OrganizerPage";
+import OrganizerReviewPage from "./screens/organizer/OrganizerReviewPage";
 
 // New Snapshots Page
-import SnapshotsPage from "./pages/snapshots/SnapshotsPage";
+import SnapshotsPage from "./screens/snapshots/SnapshotsPage";
 
 // New Sync Page
-import QuickBooksSyncPage from "./pages/sync/QuickBooksSyncPage";
+import QuickBooksSyncPage from "./screens/sync/QuickBooksSyncPage";
 
 // Documentation
-import DocumentationPage from "./pages/DocumentationPage";
+import DocumentationPage from "./screens/DocumentationPage";
 
 // Auth Pages
-import LoginPage from "./pages/auth/LoginPage";
-import RegisterPage from "./pages/auth/RegisterPage";
+import LoginPage from "./screens/auth/LoginPage";
+import RegisterPage from "./screens/auth/RegisterPage";
 
 // User Management Pages
-import UsersPage from "./pages/users/UsersPage";
-import PermissionsPage from "./pages/permissions/PermissionsPage";
+import UsersPage from "./screens/users/UsersPage";
+import PermissionsPage from "./screens/permissions/PermissionsPage";
 
 
 

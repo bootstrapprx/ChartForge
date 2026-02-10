@@ -4,7 +4,7 @@ ChartForge is a full-stack web application designed to streamline the management
 
 ## ✨ Features
 
-- **Intuitive Frontend:** A responsive and user-friendly interface built with React, Vite, and Tailwind CSS.
+- **Intuitive Frontend:** A responsive and user-friendly interface built with Next.js (React) and Tailwind CSS.
 - **Powerful Backend:** A robust REST API built with FastAPI and Python.
 - **Database Integration:** Uses PostgreSQL with SQLAlchemy for reliable data storage.
 - **AI-Powered Organization:**
@@ -46,7 +46,7 @@ The project is organized into two main directories: `frontend` and `backend`.
 - **Containerization:** Docker, Docker Compose
 
 ### Frontend
-- **Framework:** React 18, Vite
+- **Framework:** Next.js (React 18)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **API Communication:** Axios

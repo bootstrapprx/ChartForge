@@ -2,9 +2,9 @@
 import { z } from 'zod';
 
 // 1. Get the base URL from env, ensuring no trailing slash.
-// Default to current origin so nginx `/api` proxy works in production; dev can set VITE_API_URL=http://localhost:8000.
+// Default to current origin so nginx `/api` proxy works in production; dev can set NEXT_PUBLIC_API_URL=http://localhost:8000.
 const runtimeOrigin = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:8000';
-const ENV_API_URL = (import.meta.env.VITE_API_URL || `${runtimeOrigin}/api`).replace(/\/+$/, '');
+const ENV_API_URL = (process.env.NEXT_PUBLIC_API_URL || `${runtimeOrigin}/api`).replace(/\/+$/, '');
 
 // 2. The safe URL builder function
 function buildUrl(endpoint: string): string {
@@ -57,7 +57,7 @@ async function baseRequest<T>(
 
   let url = buildUrl(endpoint);
 
-  if (import.meta.env.DEV) {
+  if (process.env.NODE_ENV !== 'production') {
     console.log(`[API] ${method} ${url}`);
   }
 

@@ -3,7 +3,7 @@ import { ApiError } from '@/types/api';
 
 // NOTE: This is a legacy axios-based API wrapper. Prefer using @/lib/api for new code.
 // The baseURL should NOT include /api/v1 - routes should specify the full path.
-const ENV_API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
+const ENV_API_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
 
 const api = axios.create({
   baseURL: `${ENV_API_URL}/api/v1`,
