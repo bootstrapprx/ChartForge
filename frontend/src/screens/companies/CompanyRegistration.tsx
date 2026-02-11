@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2, CheckCircle2 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { useQueryClient } from '@tanstack/react-query';
 import { api } from '@/lib/api';
 import { QueryKey } from '@/lib/queryKeys';
@@ -39,7 +39,7 @@ const formSchema = z.object({
 
 const CompanyRegistration = () => {
     const { toast } = useToast();
-    const navigate = useNavigate();
+    const router = useRouter();
     const queryClient = useQueryClient();
     const [isLoading, setIsLoading] = useState(false);
     const [ucid, setUcid] = useState<string | null>(null);
@@ -120,7 +120,7 @@ const CompanyRegistration = () => {
                                 <Button
                                     variant="outline"
                                     className="flex-1"
-                                    onClick={() => navigate('/companies')}
+                                    onClick={() => router.push('/companies')}
                                 >
                                     Back to Companies
                                 </Button>

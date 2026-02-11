@@ -1,4 +1,6 @@
 // frontend/src/contexts/ManualModeContext.tsx
+"use client";
+
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 interface ManualModeContextType {

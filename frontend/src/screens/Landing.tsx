@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import Logo from '@/assets/logo.svg';
 import { 
   Network, 
   TrendingUp, 
@@ -55,11 +54,11 @@ const Landing = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <img src={Logo} alt="ChartForge Logo" className="h-10" />
+              <img src="/logo.svg" alt="ChartForge Logo" className="h-10" />
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />
-              <Link to="/dashboard">
+              <Link href="/dashboard">
                 <Button variant="default">
                   Launch Dashboard
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -85,7 +84,7 @@ const Landing = () => {
           </p>
 
           <div className="flex justify-center pt-4">
-            <Link to="/dashboard">
+            <Link href="/dashboard">
               <Button size="lg" className="text-lg px-8">
                 Open Dashboard
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -126,7 +125,7 @@ const Landing = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2">
-              <img src={Logo} alt="ChartForge Logo" className="h-8" />
+              <img src="/logo.svg" alt="ChartForge Logo" className="h-8" />
             </div>
             <p className="text-sm text-muted-foreground">
               © 2024 ChartForge. Unified Chart of Accounts Management.

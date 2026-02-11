@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -13,7 +14,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const { login } = useAuth();
-  const navigate = useNavigate();
+  const router = useRouter();
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -26,7 +27,7 @@ const LoginPage = () => {
         title: 'Success',
         description: 'Logged in successfully',
       });
-      navigate('/dashboard');
+      router.push('/dashboard');
     } catch (error: any) {
       toast({
         title: 'Error',
@@ -82,7 +83,7 @@ const LoginPage = () => {
             </Button>
             <div className="text-center text-sm text-muted-foreground">
               Don't have an account?{' '}
-              <Link to="/register" className="text-primary hover:underline">
+              <Link href="/register" className="text-primary hover:underline">
                 Sign up
               </Link>
             </div>
@@ -94,4 +95,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-

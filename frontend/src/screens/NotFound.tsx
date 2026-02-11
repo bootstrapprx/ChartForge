@@ -1,15 +1,18 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Home, ArrowLeft, AlertCircle } from "lucide-react";
 import { useEffect } from "react";
 
 const NotFound = () => {
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
-  }, [location.pathname]);
+    console.error("404 Error: User attempted to access non-existent route:", pathname);
+  }, [pathname]);
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
@@ -36,7 +39,7 @@ const NotFound = () => {
             </div>
 
             <div className="pt-4 space-y-3">
-              <Link to="/" className="block">
+              <Link href="/" className="block">
                 <Button className="w-full">
                   <Home className="mr-2 h-4 w-4" />
                   Go to Home

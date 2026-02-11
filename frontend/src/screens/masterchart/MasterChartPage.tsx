@@ -4,7 +4,7 @@ import { useMasterChartStats, useRebuildMasterChart } from '@/hooks/api/useMaste
 import MasterChartStats from '@/components/masterchart/MasterChartStats';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { RefreshCw, FileInput, FileOutput, Network } from 'lucide-react';
 import { useManualMode } from '@/contexts/ManualModeContext';
 
@@ -26,12 +26,12 @@ const MasterChartPage = () => {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Master Chart Dashboard</h1>
         <div className="flex space-x-2">
-            <Button asChild><Link to="/masterchart/interactive"><Network className="h-4 w-4 mr-2" /> Interactive Editor</Link></Button>
-            <Button asChild variant="outline"><Link to="/masterchart/tree"><Network className="h-4 w-4 mr-2" /> View Tree</Link></Button>
+            <Button asChild><Link href="/masterchart/interactive"><Network className="h-4 w-4 mr-2" /> Interactive Editor</Link></Button>
+            <Button asChild variant="outline"><Link href="/masterchart/tree"><Network className="h-4 w-4 mr-2" /> View Tree</Link></Button>
             {!isManualMode && (
               <>
-                <Button asChild variant="outline"><Link to="/masterchart/import"><FileInput className="h-4 w-4 mr-2" /> Import</Link></Button>
-                <Button asChild variant="outline"><Link to="/masterchart/export"><FileOutput className="h-4 w-4 mr-2" /> Export</Link></Button>
+                <Button asChild variant="outline"><Link href="/masterchart/import"><FileInput className="h-4 w-4 mr-2" /> Import</Link></Button>
+                <Button asChild variant="outline"><Link href="/masterchart/export"><FileOutput className="h-4 w-4 mr-2" /> Export</Link></Button>
               </>
             )}
         </div>

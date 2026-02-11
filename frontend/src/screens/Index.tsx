@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Network, ArrowRight, Database, BarChart3, Building2 } from "lucide-react";
 
 const Index = () => {
@@ -39,13 +39,13 @@ const Index = () => {
           </p>
 
           <div className="flex justify-center gap-4 pt-4">
-            <Link to="/dashboard">
+            <Link href="/dashboard">
               <Button size="lg">
                 Go to Dashboard
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link to="/landing">
+            <Link href="/">
               <Button size="lg" variant="outline">
                 Learn More
               </Button>

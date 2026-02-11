@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Plus, RefreshCw, List, LayoutGrid, Grid } from 'lucide-react';
 import { useManualCRUD } from '@/hooks/useManualCRUD';
 import { useManualMode } from '@/contexts/ManualModeContext';
@@ -112,7 +112,7 @@ const CompaniesPage: React.FC = () => {
             <RefreshCw className={`h-4 w-4 ${isLoading ? 'animate-spin' : ''}`} />
           </Button>
           <Button asChild>
-            <Link to="/companies/register">
+            <Link href="/companies/register">
               <Plus className="mr-2 h-4 w-4" />
               Register Company
             </Link>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -14,7 +15,7 @@ const RegisterPage = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const { register } = useAuth();
-  const navigate = useNavigate();
+  const router = useRouter();
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -46,7 +47,7 @@ const RegisterPage = () => {
         title: 'Success',
         description: 'Account created successfully',
       });
-      navigate('/dashboard');
+      router.push('/dashboard');
     } catch (error: any) {
       toast({
         title: 'Error',
@@ -117,7 +118,7 @@ const RegisterPage = () => {
             </Button>
             <div className="text-center text-sm text-muted-foreground">
               Already have an account?{' '}
-              <Link to="/login" className="text-primary hover:underline">
+              <Link href="/login" className="text-primary hover:underline">
                 Log in
               </Link>
             </div>
@@ -129,4 +130,3 @@ const RegisterPage = () => {
 };
 
 export default RegisterPage;
-

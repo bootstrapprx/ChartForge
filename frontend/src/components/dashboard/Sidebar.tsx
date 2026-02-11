@@ -1,6 +1,7 @@
 // frontend/src/components/dashboard/Sidebar.tsx
 import React, { useState } from 'react';
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import {
   LayoutDashboard,
@@ -37,21 +38,18 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useNavigate } from "react-router-dom";
 import DexterChat from '@/components/ai/DexterChat';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const location = useLocation();
+  const pathname = usePathname();
   const { isManualMode, toggleManualMode } = useManualMode();
   const { user, logout } = useAuth();
-  const navigate = useNavigate();
 
   const onToggle = () => setIsOpen(!isOpen);
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
   };
 
   const primaryLinks = [
@@ -127,7 +125,7 @@ const Sidebar = () => {
         )}
       >
         <div className="h-16 border-b flex items-center justify-between px-4 flex-shrink-0">
-          <Link to="/" className="flex items-center space-x-2 overflow-hidden">
+          <Link href="/" className="flex items-center space-x-2 overflow-hidden">
             <Network className="h-6 w-6 text-primary flex-shrink-0" />
             {isOpen && <span className="font-bold whitespace-nowrap">ChartForge</span>}
           </Link>
@@ -135,9 +133,9 @@ const Sidebar = () => {
 
         <nav className="flex-grow p-2 space-y-1 overflow-y-auto">
           {primaryLinks.map((item) => (
-            <Link to={item.path} key={item.path} title={item.label} className={cn(
+            <Link href={item.path} key={item.path} title={item.label} className={cn(
               "flex items-center space-x-3 px-3 py-2.5 rounded-lg transition-colors",
-              location.pathname === item.path ? "bg-muted text-primary" : "hover:bg-muted/50"
+              pathname === item.path ? "bg-muted text-primary" : "hover:bg-muted/50"
             )}>
               <item.icon className="h-5 w-5 flex-shrink-0" />
               {isOpen && <span className="text-sm font-medium">{item.label}</span>}
@@ -147,7 +145,7 @@ const Sidebar = () => {
           <Accordion type="multiple" className="w-full">
             {navSections.map(section => (
               <AccordionItem value={section.title} key={section.title} className="border-b-0">
-                <AccordionTrigger className={cn("px-3 py-2.5 rounded-lg hover:no-underline hover:bg-muted/50", { "bg-muted": location.pathname.startsWith(section.basePath) && section.basePath })}>
+                <AccordionTrigger className={cn("px-3 py-2.5 rounded-lg hover:no-underline hover:bg-muted/50", { "bg-muted": pathname.startsWith(section.basePath) && section.basePath })}>
                   <div className="flex items-center space-x-3">
                     <section.icon className="h-5 w-5 flex-shrink-0" />
                     {isOpen && <span className="text-sm font-medium">{section.title}</span>}
@@ -155,9 +153,9 @@ const Sidebar = () => {
                 </AccordionTrigger>
                 <AccordionContent className="pl-6 pr-2 py-1 space-y-1">
                   {section.links.map(link => (
-                    <Link to={link.path} key={link.path} title={link.label} className={cn(
+                    <Link href={link.path} key={link.path} title={link.label} className={cn(
                       "flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors text-sm",
-                      location.pathname === link.path ? "bg-muted text-primary" : "hover:bg-muted/50"
+                      pathname === link.path ? "bg-muted text-primary" : "hover:bg-muted/50"
                     )}>
                       {isOpen && <span>{link.label}</span>}
                     </Link>
